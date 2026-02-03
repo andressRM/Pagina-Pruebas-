@@ -13,14 +13,14 @@ class FindbyIdName(unittest.TestCase):
     def testIdName(self):
         elemento = self.driver.find_element(By.ID, "noimportante")
         if elemento is not None:
-            print("El elemento by ID fue encontrado")
+            print("ID fue encontrado")
 
     # Prueba 2
     def testName(self):
         
         elemento2 = self.driver.find_element(By.NAME, "ultimo")
         if elemento2 is not None:
-            print("El elemento by NAME fue encontrado")
+            print("NAME fue encontrado")
 
     def tearDown(self):
         self.driver.quit()

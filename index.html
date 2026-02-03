@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Pagina de Pruebas</title>
-    <style>
-        .rojo { color: red; }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pagina de Pruebas</title>
+<link href="twoColLiqLt.css" rel="stylesheet" type="text/css" />
+<style>
+.rojo { color: #F00; }
+</style>
 </head>
+
 <body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="nuevaPagina.html" target="_self">Pagina 2</a></li>
+      <li><a href="#">Link two</a></li>
+      <li><a href="#">Link three</a></li>
+      <li><a href="#">Link four</a></li>
+    </ul>
+  </div>
+  <div class="content">
     <h1>Página de pruebas</h1>
     <p>Sitio de Pruebas.</p>
     
-    <div id="noimportante">Soy el elemento secreto</div>
-    <br>
-
-    <label>Campo con name='ultimo':</label>
-    <input type="text" name="ultimo" value="Soy el ultimo">
-    <br><br>
+    <h3>TextBox</h3>
+    <input type="text" value="Texto de ejemplo">
     
-    <div class="rojo">Este elemento tiene la clase 'rojo'</div>
-    <br>
-    <a href="pagina2.html">Pagina 2</a>
-    <br><br>
-    
-    <table border="1">
-      <tr><td>1</td><td>2</td><td>3</td></tr>
-      <tr><td>Rojo</td><td>Azul</td><td>Naranja</td></tr>
-      <tr><td>Pera</td><td>Uva</td><td>Manzana</td></tr>
+    <h1>Pruebas locales</h1>
+    <table width="200" border="1" id="primera" name="tabla_prueba">
+      <tr id="importante" class="rojo">
+        <td>1</td><td>2</td><td>3</td>
+      </tr>
+      <tr id="noimportante">
+        <td>Rojo</td><td>Azul</td><td>Naranja</td>
+      </tr>
+      <tr name="ultimo">
+        <td>Pera</td><td>Uva</td><td>Manzana</td>
+      </tr>
     </table>
-
+    
+    <p>Grupo de Checkboxes</p>
+    <label><input type="checkbox" name="CheckboxGroup1" value="1" id="CheckboxGroup1_0" /> Uno</label>
+    <br>
+    <label><input type="checkbox" name="CheckboxGroup1" value="2" id="CheckboxGroup1_1" /> Dos</label>
+   
+  </div>
+</div>
 </body>
 </html>
