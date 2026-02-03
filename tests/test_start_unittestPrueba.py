@@ -9,7 +9,7 @@ class FindbyIdName(unittest.TestCase):
         
         self.driver = webdriver.Edge()
         
-        self.driver.get("https://andressRM.github.io/Pagina-Pruebas-/")
+        self.driver.get("https://andressrm.github.io/Pagina-Pruebas-/")
 
     
     def testIdName(self):
